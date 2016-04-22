@@ -8,10 +8,8 @@
 #### Local Wordpress
 Go to the `www` directory of Vagrant and run:
 ```bash
-git clone https://github.com/nikosolihin/start-here.git MyApp && cd $_
-```
-Replace 'example-project' with MyApp in `vvv-hosts`, `wp-cli.yml` and `vvv-init.sh`. Then,
-```bash
+git clone https://github.com/nikosolihin/wp-starter.git MyApp && cd $_
+find ./ -type f -maxdepth 1 -exec sed -i '' -e 's/example-project/myapp/g' {} \;
 vagrant up --provision
 ```
 
