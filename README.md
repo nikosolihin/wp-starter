@@ -10,6 +10,7 @@ Go to the `www` directory of Vagrant and run:
 ```bash
 git clone https://github.com/nikosolihin/wp-starter.git MyApp && cd $_
 find ./ -type f -maxdepth 1 -exec sed -i '' -e 's/example-project/myapp/g' {} \;
+cd ../..
 vagrant up --provision
 ```
 
