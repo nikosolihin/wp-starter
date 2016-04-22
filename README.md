@@ -49,6 +49,6 @@ chmod +x prep.sh && ./$_
 ```
 Create a new Github repo without .gitignore and README.md. Then add the new origin and production remotes:
 ```bash
-git remote set-url origin https://github.com/USERNAME/REPOSITORYURL.git
+git remote add origin https://github.com/USERNAME/REPOSITORYURL.git
 git remote add production ssh://user@host/~/git/prod.git
 ```
