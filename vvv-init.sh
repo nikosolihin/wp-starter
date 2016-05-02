@@ -18,7 +18,7 @@ if [ ! -f "htdocs/wp-config.php" ]; then
 
 	wp core config --dbname="example-project" --dbuser=wp --dbpass=wp --dbhost="localhost" --dbprefix=wp_ --locale=en_US --allow-root --extra-php <<PHP
 define('WP_CONTENT_DIR', dirname(__FILE__).'/wp-content/' );
-define('WP_SITEURL', 'http://example-project.dev/wp/');
+define('WP_SITEURL', 'http://example-project.dev');
 define('WP_DEBUG', true);
 define('WP_DEBUG_DISPLAY', false);
 define('WP_DEBUG_LOG', true);

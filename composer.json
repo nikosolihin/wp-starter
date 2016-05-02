@@ -9,7 +9,7 @@
 		}
 	],
 	"require": {
-		"johnpbloch/wordpress": "4.5",
+		"johnpbloch/wordpress": "~4.5",
 		"timber/timber": "*",
 		"wpackagist-plugin/wordpress-importer": "^0.6.1"
 	},
