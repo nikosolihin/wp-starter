@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying a single sermon.
+ * The Template for displaying a single post type.
  *
  * @package  WordPress
  * @subpackage  Timber

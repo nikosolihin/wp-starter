@@ -11,5 +11,4 @@ node_modules/
 npm-debug.log
 src/.svn
 gulpfile.js/.svn
-vendor
 composer.lock
