@@ -39,13 +39,6 @@ git add .
 git commit -m 'Allons-y!'
 ```
 
-```bash
-echo "htdocs/" >> .gitignore # We can now ignore the destination folder after vagrant provision
- && git init
-git add .
-git commit -m 'Allons-y!'
-```
-
 #### Setting up remote
 Prepare the production server for deployment using this [gist](https://gist.github.com/nikosolihin/7b4eabe087ccec339eca6d8e60d1c56f#file-prep-sh-L5):
 ```bash
@@ -59,3 +52,5 @@ Create a new Github repo without .gitignore and README.md. Then add the new orig
 git remote add origin https://github.com/USERNAME/REPOSITORYURL.git
 git remote add production ssh://user@host/~/git/prod.git
 ```
+
+#### Preparing Travis CI
