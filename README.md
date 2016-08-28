@@ -22,18 +22,26 @@ svn export https://github.com/vigetlabs/gulp-starter/trunk/package.json
 ```
 Add `php.js` and `twig.js` from older projects to `gulpfile.js/tasks`. Edit `name`, `version` and `description` in `package.json`.
 
+Clean unnecessary folders and `.git` folder to start a fresh history:
 ```
+rm -rf .git
 rm -rf ./src/html ./src/images
 rm -rf ./gulpfile.js/tasks/html.js ./gulpfile.js/tasks/images.js
 npm install
 ```
 
 #### Initial Commit
-To use this as a new project, clear out the `git` data and start a fresh history:
+Tell `.gitignore` to ignore htdocs and VVV config files:
+```bash
+echo "htdocs/\nvvv-hosts\nvvv-init.sh\nvvv-nginx.conf\nwp-cli.yml" >> .gitignore # We can now ignore the destination folder after vagrant provision
+git init
+git add .
+git commit -m 'Allons-y!'
+```
 
 ```bash
 echo "htdocs/" >> .gitignore # We can now ignore the destination folder after vagrant provision
-rm -rf .git && git init
+ && git init
 git add .
 git commit -m 'Allons-y!'
 ```
