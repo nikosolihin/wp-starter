@@ -38,18 +38,21 @@ git init
 git add .
 git commit -m 'Allons-y!'
 ```
+Then use Tower app to initiate Git-Flow.
 
-#### Setting up remote
-Prepare the production server for deployment using this [prep.sh](https://gist.github.com/nikosolihin/7b4eabe087ccec339eca6d8e60d1c56f#file-prep-sh-L5) and [post-receive hook](https://gist.github.com/nikosolihin/63b1c0fc19aaff935f53f3aafdb393e9):
+#### Setting up remote repo
+Create a new Github repo without .gitignore and README.md. Then add the new origin to our local repo:
+```bash
+git remote add origin https://github.com/USERNAME/REPOSITORYURL.git
+```
+
+#### Setting up remote deploy repo
+Prepare the bare repo for deployment using this [prep.sh](https://gist.github.com/nikosolihin/7b4eabe087ccec339eca6d8e60d1c56f#file-prep-sh-L5) and [post-receive hook](https://gist.github.com/nikosolihin/63b1c0fc19aaff935f53f3aafdb393e9):
 ```bash
 ssh -i .ssh/KEYNAME user@host
 cd ~
 curl -O https://gist.githubusercontent.com/nikosolihin/7b4eabe087ccec339eca6d8e60d1c56f/raw/7e433ce5a235e1b150d2eeb2fec9c1f0d664b42a/prep.sh
 chmod +x prep.sh && ./$_
-```
-Create a new Github repo without .gitignore and README.md. Then add the new origin to our local repo:
-```bash
-git remote add origin https://github.com/USERNAME/REPOSITORYURL.git
 ```
 
 #### Preparing Travis CI
