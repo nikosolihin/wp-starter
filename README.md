@@ -32,8 +32,8 @@ npm install
 To use this as a new project, clear out the `git` data and start a fresh history:
 
 ```bash
+echo "htdocs/" >> .gitignore # We can now ignore the destination folder after vagrant provision
 rm -rf .git && git init
-echo "htdocs/" >> .gitignore # We can now ignore the destination folder
 git add .
 git commit -m 'Allons-y!'
 ```
