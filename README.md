@@ -60,3 +60,9 @@ chmod +x prep.sh && ./$_
 1. Head to [Travis CI](https://travis-ci.org/) account settings, sync repo and toggle the project's repo.
 2. Copy the markdown of the status badge.
 3. Revise the project's README.md and paste the badge.
+4. Copy the private key that Travis will use to the folder. Don't commit!
+5. Run `travis login` and `travis encrypt-file deploy-key --add` to add the needed env vars and update `.travis.yml`
+6. `rm deploy-key`
+7. Customize `.travis.yml`
+8. Cut and paste the `openssl` part to `_travis/install.sh`
+9. Make sure `_travis/deploy.sh` looks good
