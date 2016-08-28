@@ -58,5 +58,5 @@ chmod +x prep.sh && ./$_
 
 ### Preparing Travis CI
 1. Head to [Travis CI](https://travis-ci.org/) account settings, sync repo and toggle the project's repo.
-2. Copy the URL of build status badge.
+2. Copy the markdown of the status badge.
 3. Revise the project's README.md and paste the badge.
