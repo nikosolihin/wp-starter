@@ -13,7 +13,7 @@ cd ../..
 vagrant up --provision
 ```
 
-#### Build Tool
+### Build Tool
 Utilize [Gulp Starter](https://github.com/vigetlabs/gulp-starter) as project builder:
 ```bash
 svn checkout https://github.com/vigetlabs/gulp-starter/trunk/src src
@@ -30,7 +30,7 @@ rm -rf ./gulpfile.js/tasks/html.js ./gulpfile.js/tasks/images.js
 npm install
 ```
 
-#### Initial Commit
+### Initial Commit
 Tell `.gitignore` to ignore htdocs and VVV config files:
 ```bash
 echo "htdocs/\nvvv-hosts\nvvv-init.sh\nvvv-nginx.conf\nwp-cli.yml" >> .gitignore # We can now ignore the destination folder after vagrant provision
@@ -40,7 +40,7 @@ git commit -m 'Allons-y!'
 ```
 Then use Tower app to initiate Git-Flow.
 
-#### Setting up remote repo
+### Setting up remote repo
 Create a new Github repo without .gitignore and README.md. Then add the new origin to our local repo:
 ```bash
 git remote add origin https://github.com/USERNAME/REPOSITORYURL.git
