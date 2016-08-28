@@ -47,7 +47,7 @@ git remote add origin https://github.com/USERNAME/REPOSITORYURL.git
 ```
 Do a git push to make sure everything's good.
 
-#### Setting up remote deploy repo
+### Setting up remote deploy repo
 Prepare the bare repo for deployment using this [prep.sh](https://gist.github.com/nikosolihin/7b4eabe087ccec339eca6d8e60d1c56f#file-prep-sh-L5) and [post-receive hook](https://gist.github.com/nikosolihin/63b1c0fc19aaff935f53f3aafdb393e9):
 ```bash
 ssh -i .ssh/KEYNAME user@host
@@ -56,4 +56,4 @@ curl -O https://gist.githubusercontent.com/nikosolihin/7b4eabe087ccec339eca6d8e6
 chmod +x prep.sh && ./$_
 ```
 
-#### Preparing Travis CI
+### Preparing Travis CI
