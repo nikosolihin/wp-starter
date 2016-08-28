@@ -66,3 +66,4 @@ chmod +x prep.sh && ./$_
 7. Customize `.travis.yml`
 8. Cut and paste the `openssl` part to `_travis/install.sh`
 9. Make sure `_travis/deploy.sh` looks good
+10. If using Basecamp, update the Zapier webhooks URL in `.travis.yml`
