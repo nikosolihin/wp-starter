@@ -2,7 +2,7 @@
 
 ## Installation
 #### Local Wordpress
-Go to the `www` directory of Vagrant and run:
+Go to the `www` directory of Vagrant, clone this repo (change MyApp to the project name), and find & replace 'example-project' with the real project name:
 ```bash
 git clone https://github.com/nikosolihin/wp-starter.git MyApp && cd $_
 find ./ -type f -maxdepth 1 -exec sed -i '' -e 's/example-project/myapp/g' {} \;
