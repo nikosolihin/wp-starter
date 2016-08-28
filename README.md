@@ -20,7 +20,7 @@ svn checkout https://github.com/vigetlabs/gulp-starter/trunk/src src
 svn checkout https://github.com/vigetlabs/gulp-starter/trunk/gulpfile.js gulpfile.js
 svn export https://github.com/vigetlabs/gulp-starter/trunk/package.json
 ```
-Add `php.js` and `twig.js` from older projects. Edit `name`, `version` and `description` in `package.json`.
+Add `php.js` and `twig.js` from older projects to `gulpfile.js/tasks`. Edit `name`, `version` and `description` in `package.json`.
 
 ```
 rm -rf ./src/html ./src/images
