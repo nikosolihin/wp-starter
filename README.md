@@ -4,7 +4,7 @@
 #### Local VVV Wordpress Site
 1. Go to the `www` directory of Vagrant
 2. Clone this repo, change `MyApp` to the real project name
-3. Find & replace `example-project` with the real project name.
+3. Find & replace `example-project` with the real project name
 4. Provision
 ```bash
 git clone https://github.com/nikosolihin/wp-starter.git MyApp && cd $_
@@ -14,7 +14,7 @@ vagrant up --provision
 ```
 
 #### Build Tool
-Integrate [Gulp Starter](https://github.com/vigetlabs/gulp-starter) into the development workflow:
+Utilize [Gulp Starter](https://github.com/vigetlabs/gulp-starter) as project builder:
 ```bash
 svn checkout https://github.com/vigetlabs/gulp-starter/trunk/src src
 svn checkout https://github.com/vigetlabs/gulp-starter/trunk/gulpfile.js gulpfile.js
