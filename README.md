@@ -1,9 +1,5 @@
 # WP Starter Project
 
-## Source Directory
-
-`acf-json/` contains [local JSON](https://www.advancedcustomfields.com/resources/local-json/) files for [synchronizing](https://www.advancedcustomfields.com/resources/synchronized-json/) Advanced Custom Fields. This is incredibly useful for version control.
-
 ## Installation
 #### Local Wordpress
 Go to the `www` directory of Vagrant and run:
