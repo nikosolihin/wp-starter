@@ -30,6 +30,10 @@ PHP
 
 	wp core install --url=example-project.dev --title="example-project" --admin_user=root --admin_password=password --admin_email=root@example-project.dev --allow-root
 
+	# Install a default theme, otherwise we wont be able to access dashboard
+	mkdir htdocs/wp-content/themes
+	wp theme install twentysixteen --activate
+
 	wp option update permalink_structure "/%postname%/" --allow-root
 fi
 
